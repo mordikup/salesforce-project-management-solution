@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project Management Solution</fullName>
+    <types>
+        <members>Project__c.Account__c</members>
+        <members>Project__c.End_Date__c</members>
+        <members>Project__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Project__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Project__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>PublicFolders</members>
+        <members>PublicFolders/ProjectDashboards</members>
+        <members>PublicFolders/ProjectDashboards/JbeTDfuPNxRyeDELaypYFKPaCLKveZ1</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>Project_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Project_Create_Kickoff_Task_on_In_Progress</members>
+        <members>Project_Quick_Create_Wizard</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Project__c-Project Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Project__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Project_Management_Operations</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>ProjectReports</members>
+        <members>ProjectReports/Projects_by_Status_I7K</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>Project__c.Require_End_Date_When_Completed</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>68.0</version>
+</Package>
