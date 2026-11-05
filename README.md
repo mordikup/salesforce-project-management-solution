@@ -8,7 +8,7 @@ A complete, enterprise-grade project management application built natively on Sa
 - **Relational Data Architecture:** Custom Object (`Project__c`) linked via Lookup relationship to standard `Account` records.
 - **Declarative Process Automation:**
   * **Screen Flow Wizard:** Context-aware quick create modal embedded on Account record pages, automatically injecting parent `recordId`.
-  * **Record-Triggered Automation:** Event-driven Flow instantly instantiating priority Kickoff tasks upon lifecycle status progression (`In Progress`).
+  * **Record-Triggered Automation (Bulk-Safe):** Event-driven Flow (`Project_Create_Kickoff_Task_on_In_Progress`) executing upon status transition to `In Progress`. Implements enterprise bulk patterns utilizing in-memory record collections and loops to batch-create multi-stage onboarding tasks (`Kickoff Meeting`, `Scope Alignment`, `Milestone Sign-off`) via a single DML operation, ensuring strict adherence to Apex Governor Limits (150 DML limit).
   * **Scheduled SLA Monitoring:** Daily recurring batch automation (`Project_Scheduled_Overdue_Handler`) auditing overdue projects past target completion dates, toggling compliance flags, and assigning urgent escalation tasks to record owners.
 - **Data Integrity & Governance:**
   * Validation Rule enforcing mandatory completion audit dates (`End_Date__c`) prior to marking records as `Completed`.
